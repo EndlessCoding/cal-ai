@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal AI - Your Meal Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="questionnaire.html" class="back-link">
+            <span>&larr;</span>
+            <span>返回</span>
+        </a>
+        <button class="adjust-plan-button">调整方案</button>
+    </header>
+
+    <div class="plan-container">
+        <aside class="calendar-view">
+            <div class="calendar-header">
+                <button class="month-switch-button">&lt; Prev</button>
+                <span class="month-name">Month Placeholder</span>
+                <button class="month-switch-button">Next &gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <!-- Placeholder for calendar days. Example: -->
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day current-date">3</div>
+                <div class="calendar-day">4</div>
+                <!-- ... more days ... -->
+                <div class="calendar-day">30</div>
+            </div>
+        </aside>
+
+        <main class="meal-list-view">
+            <div class="meal-card">
+                <h4><strong>[Food Name Placeholder]</strong></h4>
+                <p><strong>Nutritional Info:</strong> Calories: XXX, Protein: YYg, Carbs: ZZg, Fat: AAg</p>
+                <p><strong>Cooking Method:</strong> [Method Placeholder - e.g., Steamed with herbs]</p>
+                <p><em>Meal Time: Lunch</em></p>
+            </div>
+            <div class="meal-card">
+                <h4><strong>[Another Food Placeholder]</strong></h4>
+                <p><strong>Nutritional Info:</strong> Calories: BBB, Protein: CCg, Carbs: DDg, Fat: EEg</p>
+                <p><strong>Cooking Method:</strong> [Method Placeholder - e.g., Grilled]</p>
+                <p><em>Meal Time: Dinner</em></p>
+            </div>
+            <!-- More meal cards as needed -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

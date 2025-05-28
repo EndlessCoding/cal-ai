@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal AI - Manual Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="food_analysis.html" class="back-link">
+            <span>&larr;</span>
+            <span>返回</span>
+        </a>
+        <button class="analyze-button">分析</button>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="form-group">
+                <label for="food-name">食物名称</label>
+                <input type="text" id="food-name" name="food-name">
+                <p class="hint-text">请输入食物的名称</p>
+            </div>
+
+            <div class="form-group">
+                <label for="ingredients">食材组成</label>
+                <input type="text" id="ingredients" name="ingredients">
+                <p class="hint-text">请输入食物的食材组成，用逗号分隔</p>
+            </div>
+
+            <div class="form-group">
+                <label for="serving-size">份量</label>
+                <input type="text" id="serving-size" name="serving-size">
+                <p class="hint-text">例如：100克，1盘，1个</p>
+            </div>
+
+            <div class="form-group">
+                <label for="cooking-method">烹饪方式</label>
+                <input type="text" id="cooking-method" name="cooking-method">
+                <p class="hint-text">例如：炒，蒸，烤</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

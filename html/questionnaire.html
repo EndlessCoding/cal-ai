@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal AI - Personalized Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="back-link">
+            <span>&larr;</span>
+            <span>返回</span>
+        </a>
+    </header>
+
+    <h1 class="page-title">个性化膳食规划</h1>
+    <p class="page-description">请填写以下信息，我们将为您生成专属膳食计划</p>
+
+    <div class="step-placeholder">
+        <!-- Example Step 1 -->
+        <div class="question-group">
+            <label for="activity-level">Your activity level?</label>
+            <div>
+                <input type="radio" id="activity-low" name="activity-level" value="low">
+                <label for="activity-low" class="option-label">Low</label>
+            </div>
+            <div>
+                <input type="radio" id="activity-moderate" name="activity-level" value="moderate">
+                <label for="activity-moderate" class="option-label">Moderate</label>
+            </div>
+            <div>
+                <input type="radio" id="activity-high" name="activity-level" value="high">
+                <label for="activity-high" class="option-label">High</label>
+            </div>
+        </div>
+
+        <div class="question-group">
+            <label>Dietary restrictions?</label>
+            <div>
+                <input type="checkbox" id="restriction-vegetarian" name="dietary-restriction" value="vegetarian">
+                <label for="restriction-vegetarian" class="option-label">Vegetarian</label>
+            </div>
+            <div>
+                <input type="checkbox" id="restriction-gluten-free" name="dietary-restriction" value="gluten-free">
+                <label for="restriction-gluten-free" class="option-label">Gluten-Free</label>
+            </div>
+            <div>
+                <input type="checkbox" id="restriction-dairy-free" name="dietary-restriction" value="dairy-free">
+                <label for="restriction-dairy-free" class="option-label">Dairy-Free</label>
+            </div>
+        </div>
+
+        <div class="question-group">
+            <label for="age-slider">Age: <span id="age-value">25</span></label>
+            <div class="slider-container">
+                <input type="range" id="age-slider" name="age" min="10" max="100" value="25" oninput="document.getElementById('age-value').textContent = this.value;">
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <button class="nav-button prev-button">上一步</button>
+        <button class="nav-button next-button">下一步</button>
+        <button class="nav-button generate-button">生成方案</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
